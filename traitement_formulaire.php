@@ -1,14 +1,23 @@
 <?php
-
-$to      = 'leila.el.omari@gmail.com';
-               $message = $this->input->post('message');
-               $from_email="=?UTF-8?B?".base64_encode( $this->input->post('email'))."?=";
-               $from_user = "=?UTF-8?B?".base64_encode( $this->input->post('nom'))."?=";
- 
-                $headers = "From: $from_user <$from_email>\r\n".   "MIME-Version: 1.0" . "\r\n" .
-                 "Content-type: text/html; charset=UTF-8" . "\r\n";
- 
-               mail($to, $message, $headers);
-               redirect('contact/?m=added');
-               
+    $destinataire = 'leila.el.omari@gmail.com';
+    // Pour les champs $expediteur / $copie / $destinataire, séparer par une virgule s'il y a plusieurs adresses
+    $expediteur = $_POST['email'];
+     
+    $headers  = 'MIME-Version: 1.0' . "\n"; // Version MIME
+    $headers .= 'Content-type: text/html; charset=ISO-8859-1'."\n"; // l'en-tete Content-type pour le format HTML
+    $headers .= 'To: '.$destinataire."\n"; // Mail de reponse
+    $headers .= 'From: "YO_SOY_LIBRE"<'.$expediteur.'>'."\n"; // Expediteur
+     
+    $message =  '<div style="width: 100%; text-align: center; font-weight: bold"> Bonjour '.$_POST['name'].'!'<br>
+                    .$_POST['message'].'</div>';
+     
+    if(mail($destinataire, $message, $headers))
+    {
+        echo '<script languag="javascript" >alert("Votre message a bien été envoyé ");</script>';
+    }
+    else // Non envoyé
+    {
+        echo '<script languag="javascript">alert("Votre message n\'a pas pu être envoyé");</script>';
+    }
+    header('Location: traitement_formulaire.php');
 ?>
