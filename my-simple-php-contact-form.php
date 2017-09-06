@@ -1,8 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yo Soy Libre</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800|Roboto:300,400,500" rel="stylesheet">
+  </head>
+  <body>
+  
+  <h3>test formulaire</h3>
+  
 <?php
 $action=$_REQUEST['action'];
 if ($action=="")    /* display the contact form */
     {
     ?>
+  
+  <div>
     <form  action="" method="POST" enctype="multipart/form-data">
     <input type="hidden" name="action" value="submit">
     Your name:<br>
@@ -32,3 +46,6 @@ else                /* send the submitted data */
 	    }
     }  
 ?>
+    </div>
+  </body>
+</html>
