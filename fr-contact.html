@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yo Soy Libre</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800|Roboto:300,400,500" rel="stylesheet">
+  </head>
+  <body id="contact">
+  <div class="site-content">
+    <div class="btn-burger">
+      <div class="barre"></div>
+      <div class="barre"></div>
+      <div class="barre"></div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="fr-accueil.html">accueil</a></li>
+        <li><a href="fr-apropos.html">à propos</a></li>
+        <li><a href="fr-photos.html">photos</a></li>
+        <li><a href="fr-contact.html" class="active">contact</a></li>
+        <li><a href="contacto.html" class="lang">ES</a> <a href="en-contact.html" class="lang">EN</a> <a href="fr-contact.html" class="lang chosen">FR</a></li>
+      </ul>
+    </nav>
+    <div class="main">
+      <header>
+        <div class="title">
+          <h2>Yo Soy</h2>
+          <h1>Libre</h1>
+        </div>
+        <h4>Un projet documentaire de Hélène Chauvin</h4>
+      </header>
+     
+      
+      <div>
+        <form method="post" action="traitement.php">
+         <div class="field">
+           <p><label for="name">Nom</label></p>
+           <input type="text" name="name" required/>
+         </div>
+         <div class="field">
+           <p><label for="mail">Email</label></p>
+           <input type="email" name="mail" required/></p>
+         </div>
+         <div class="field">
+           <p><label for="comment">Message</label><br/></p>
+           <textarea type="text" name="comment" id="comment" required placeholder="..."></textarea>
+         </div>
+         <div class="field">
+           <input type="submit" value="Envoyer" id="sendbutton"/>
+         </div>
+        </form>
+      </div>
+      
+  
+      <div id="don-b">
+        <a href="">Soutenir le film</a>
+      </div>
+    </div>
+    </div>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+  </body>
+</html>
