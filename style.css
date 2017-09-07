@@ -45,10 +45,56 @@ h4 {
     padding-top: 1.5em;
     }
     
+h5 {
+    font-size: 1.1em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 1.3em;
+    padding-top: 1em;
+    padding-bottom: 0.7em;
+    }
+    
+h6 {
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 1.3em;
+    }
+ 
+.credits-b, .credits-n {
+    font-size: 0.7em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-align: left;
+    line-height: 1.3em;
+    width: 85%;
+    margin: auto;
+    padding-top: 3em;
+    padding-bottom: 0.7em;
+    }
+
+.credits-b {
+    color: rgba(255,255,240,0.7);
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    }
+
+.credits-n {
+    color: rgba(0,0,0,0.7);
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    }
+    
 .intext {
     color: Black;
     font-weight: 400;
     padding: 3em 0 2em 0;
+    }
+
+.headtitle {
+    margin-top: 3.5em;
     }
    
 p {
@@ -82,11 +128,14 @@ img {
     } 
 
 .signature {
+    margin: 2em 0em 6em 0em;
+    /*
     font-size: 1.1em;
     margin: 1em 1em 5em 1em;
     padding: 1em;
-    border: 1px solid black;
+    border: 1px solid black;*/
     }
+
     
 .about {
     margin-top: 5em;
@@ -99,6 +148,17 @@ img {
     right: 0;
     padding: 2em 0 1.5em 0;
     text-align: center;
+    }
+    
+.footer {
+    color: rgba(255,255,240,0.9);
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    width: 85%;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 6%;
+    padding: 2%;
     }
             
 #white-text {
