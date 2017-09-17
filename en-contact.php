@@ -53,8 +53,8 @@ if(isset($_POST['mailform']))
         <li><a href="en-home.html">home</a></li>
         <li><a href="en-about.html">about</a></li>
         <li><a href="en-photos.html">photos</a></li>
-        <li><a href="en-contact.html" class="active">contact</a></li>
-        <li><a href="contacto.html" class="lang">ES</a> <a href="en-contact.html" class="lang chosen">EN</a> <a href="fr-contact.html" class="lang">FR</a></li>
+        <li><a href="en-contact.php" class="active">contact</a></li>
+        <li><a href="contacto.php" class="lang">ES</a> <a href="en-contact.php" class="lang chosen">EN</a> <a href="fr-contact.php" class="lang">FR</a></li>
       </ul>
     </nav>
     <div class="main">
