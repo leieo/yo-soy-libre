@@ -417,7 +417,7 @@ video {
     
 form {
     /* Pour le centrer dans la page */
-    margin: 9em auto 6em auto;
+    margin: 0em auto 18em auto;
     width: 370px;
     /* Pour voir les limites du formulaire */
     padding: 1em;
