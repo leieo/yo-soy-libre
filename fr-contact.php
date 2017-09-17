@@ -25,11 +25,11 @@ if(isset($_POST['mailform']))
         ';
   
     mail("helene@newparadiseproductions.com", "contact - npp", $message, $header);
-    $msg="Votre message a bien été envoyé !";    
+    $msg="Votre message a bien été envoyé";    
     }
     else
     {
-        $msg="Tous les champs doivent être complétés ...";
+        $msg="Tous les champs doivent être complétés";
     }
 }
 ?>
@@ -66,16 +66,7 @@ if(isset($_POST['mailform']))
         <h4>Un projet documentaire de Hélène Chauvin</h4>
       </header>
       
-      <h3> <br/> <br/> <br/> </h3>
-      
-  
-      <div id="don-b">
-        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=JY7P55PC7TVA8" title="PayPal, le réflexe sécurité pour payer en ligne">Soutenir le film</a>
-      </div>
-     
-      <div>
-        <div align="center">
-        <br/>
+        <div class="msg" align="center">
         <br/>
         <br/>
         <?php
@@ -84,7 +75,14 @@ if(isset($_POST['mailform']))
         echo $msg;
         }
         ?>
+        <br/>
         </div>
+  
+      <div id="don-b">
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=JY7P55PC7TVA8" title="PayPal, le réflexe sécurité pour payer en ligne">Soutenir le film</a>
+      </div>
+     
+      <div>
         <form method="POST" action="">
          <div class="field">
            <p><label for="nom">Nom</label></p>

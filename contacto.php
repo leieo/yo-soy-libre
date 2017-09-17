@@ -25,11 +25,11 @@ if(isset($_POST['mailform']))
         ';
   
     mail("helene@newparadiseproductions.com", "contact - npp", $message, $header);
-    $msg="Your message has been sent !";    
+    $msg="Your message has been sent";    
     }
     else
     {
-        $msg="All fields are required ...";
+        $msg="All fields are required";
     }
 }
 ?>
@@ -66,10 +66,7 @@ if(isset($_POST['mailform']))
         <h4>Un proyecto documental de Hélène Chauvin</h4>
       </header>
       
-      <h3> <br/> <br/> <br/> </h3>
-      
-        <div align="center">
-        <br/>
+        <div class="msg" align="center">
         <br/>
         <br/>
         <?php
@@ -78,6 +75,7 @@ if(isset($_POST['mailform']))
         echo $msg;
         }
         ?>
+        <br/>
         </div>
   
       <div id="don-b">

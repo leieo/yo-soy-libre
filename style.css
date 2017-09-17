@@ -149,6 +149,17 @@ img {
     text-align: center;
     }
     
+.msg {
+    color: ivory;
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    text-align: center;
+    letter-spacing: 0.1em;
+    word-spacing: 0.3em;
+    line-height: 1.5em;
+    margin-top: 1.5em;
+    }
+    
 .footer {
     color: rgba(255,255,240,0.9);
     opacity: 0.9;
