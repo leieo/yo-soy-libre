@@ -186,30 +186,29 @@ img {
     
 #don-b, #don-n {
     text-align: center;
-    padding-top: 6em;
+    padding-top: 8em;
     padding-bottom: 15em;
     }
 
 #don-b a, #don-n a {
     text-transform: uppercase;
-    font-size: 1.4em;
-    font-weight: 300;
+    font-size: 1.6em;
+    font-weight: 600;
     letter-spacing: 0.14em;
     word-spacing: 0.4em;
     line-height: 2.6em;
     padding: 0.7em;
     opacity: 0.75;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
-    border: 2px solid ivory;
     }
 
 #don-b a {
-    border: 2px solid ivory;
+    border: 4px solid ivory;
     }
     
 #don-n a {
     color: black;
-    border: 2px solid black;
+    border: 3px solid black;
     }
     
 #don-b a:hover {
