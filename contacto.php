@@ -68,12 +68,6 @@ if(isset($_POST['mailform']))
       
       <h3> <br/> <br/> <br/> </h3>
       
-  
-      <div id="don-b">
-        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UVQTYMLAQGANU" title="PayPal, la forma más segura y rápida de pagar en línea.">¡ Apoya YO SOY LIBRE !</a>
-      </div>
-     
-      <div>
         <div align="center">
         <br/>
         <br/>
@@ -85,6 +79,12 @@ if(isset($_POST['mailform']))
         }
         ?>
         </div>
+  
+      <div id="don-b">
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UVQTYMLAQGANU" title="PayPal, la forma más segura y rápida de pagar en línea.">¡ Apoya YO SOY LIBRE !</a>
+      </div>
+     
+      <div>
         <form method="POST" action="">
          <div class="field">
            <p><label for="nom">Nombre</label></p>
